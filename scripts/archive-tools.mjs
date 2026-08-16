@@ -14,6 +14,8 @@ const allowedMembers = [
   ["Q", /\(Changmin\)/iu],
   ["Sunwoo", /\(Sunwoo\)/iu],
   ["Eric", /\(Eric\)/iu],
+  ["Haknyeon (2017 - 2025)", /(\(Haknyeon\)|HAKNYEON|학년)/iu],
+  ["New (2017 - 2026)", /(\(Chanhee\)|\(New\)|CHANHEE|\bNEW\b|뉴)/iu],
 ];
 
 function dateCode(value, fallback = "") {
