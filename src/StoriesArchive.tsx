@@ -1,3 +1,4 @@
+import { MemberName } from "./MemberName";
 import { useMemo, useState } from "react";
 
 type Media = {
@@ -142,7 +143,7 @@ export function StoriesArchive({ data }: { data: Archive }) {
             {data.members.map((item, index) => (
               <button key={item.id} onClick={() => chooseCollection(item)}>
                 <span>{String(index + 1).padStart(2, "0")}</span>
-                <strong>{item.name.toUpperCase()}</strong>
+                <strong><MemberName name={item.name} /></strong>
                 <small>{item.media.length.toLocaleString("en-US")} MEDIA FILES →</small>
               </button>
             ))}

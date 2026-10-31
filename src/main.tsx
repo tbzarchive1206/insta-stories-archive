@@ -19,3 +19,5 @@ createRoot(document.getElementById("root")!).render(
     <StoriesArchive data={completeArchive} />
   </StrictMode>,
 );
+
+import "./member-responsive.css";
